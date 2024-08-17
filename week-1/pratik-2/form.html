@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body style="display: flex; justify-content: center;align-items: center;">
+    
+    <form style="width: 500px;height: 200px;padding: 50px;">
+
+        <fieldset style="background-color: beige;">
+            <legend>Form Bilgileri</legend>
+
+            <div style="margin-bottom: 10px;">
+                <label for="fullname">Adınız soyadınız</label>
+                <input type="text" name="fullname" id="fullname">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="email">Mailiniz</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="password">Şifrenizi Giriniz</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="gender">Cinsiyetiniz</label>
+                <input type="radio" name="gender" value="male">Erkek
+                <input type="radio" name="gender" value="female">Kadın
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="fruits">Favori meyvenizi seçiniz:</label>
+                <select id="fruits">
+                    <option value="">seçiniz..</option>
+                    <option value="apple">Elma</option>
+                    <option value="banana">Muz</option>
+                    <option value="strawberry">çilek</option>
+                </select>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="message">Mesajınızı Giriniz:</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+        </fieldset>
+
+            <div style="margin-top: 10px;">
+                <button type="submit">gönder</button>
+            </div>
+
+    </form>
+
+</body>
+</html>
