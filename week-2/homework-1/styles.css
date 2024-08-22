@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-  
+/* tüm elemanlar flew yapısı içerisine alınarak dikeyde sıralandı */
 body{
     display: flex;
     flex-direction: column;
@@ -21,6 +21,7 @@ header{
     padding: 30px;
 }
 
+/* bağlantı linkleri flew yapısı içerisine alınarak yatayda sıralandı   */
 .navigation{
     list-style: none;
     display: flex;
@@ -35,6 +36,7 @@ ul li a{
     padding: 10px;
 }
 
+
 ul li a:hover{
     background-color:#464545;
     border: none;
@@ -47,6 +49,7 @@ main{
 
 }
 
+/* blog özet yazıları flew yapısı içerisine alınarak yatayda sıralandı   */
 section{
     display: flex;
     flex-direction: row;
@@ -92,6 +95,7 @@ h2, h3 {
 
 }
 
+/* cursor üzerine geldiğinde efekt eklendi */
 .baslik:hover{
     padding: 10px 20px;
     background-color: #f4f4f4;
@@ -99,6 +103,7 @@ h2, h3 {
     border-radius: 5px;
 }
 
+/* başlık tıklandığı an için efekt eklendi */
 .baslik:active{
     padding: 15px 25px;
     background-color: #f4f4f4;
@@ -107,11 +112,12 @@ h2, h3 {
     transition: all 0.2sn ease;
 }
 
+/* ziyaret edilen link rengi değişmemesi için düzenleme yapıldı */
 .baslik:visited{
     color: #333;
 }
 
-
+/* fixed olarak sayfanın en altında olması için düzenleme yapıldı */
 footer{
     width: 100%;
     background-color: #333;
