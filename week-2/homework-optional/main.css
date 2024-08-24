@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("https://picsum.photos/id/877/1200/700") no-repeat center center/cover;
+    color: #f6f4f7;
+    /* background: linear-gradient(to right, #593c70, #f16047); */
+}
+
+.form-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: flex-start;
+    width: 500px;
+    height: 100%;
+    border: 1px solid bisque;
+    border-radius: 6px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    gap: 30px;
+    overflow: hidden;
+    color: #f6f4f7;
+
+}
+
+span{
+    display: block;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+.input-container{
+    position: relative;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Icon'a tıklamayı devre dışı bırakır */
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Icon'a tıklamayı devre dışı bırakır */
+}
+
+.input-container input{
+    background: transparent;
+    border-radius: 4px;
+    border: 2px solid #f6f4f7;
+    width: 100%;
+    padding: 10px;
+}
+
+.gender{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #f6f4f7;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+input:focus~label,
+input:valid~label {
+    top: -100px;
+    font-size: 12px;
+} 
+
+#suggestion{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+}
