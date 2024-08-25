@@ -7,27 +7,35 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     
+
     <div class="form-area">
         <h1>Survey Form For CSS Practice</h1>
         <p id="description">Lorem, ipsum dolor.</p>
+            <!-- form elementi -->
             <form id="survey-form">
+                <!-- fullname girişi -->
                 <div class="input-container">
+                    <input class="input" type="text" name="fullname" id="name" placeholder=" ">
                     <i class="fa-solid fa-user"></i>
-                    <label id="name-label" for="fullname">Full Name</label>
-                    <input type="text" name="fullname" id="name">
+                    <label class="labell" id="name-label" for="fullname">Full Name</label>
                 </div>
+                <!-- email girişi -->
                 <div class="input-container">
+                    <input class="input" type="email" name="email" 
+                    id="email" placeholder=" ">
                     <i class="fa-solid fa-envelope"></i>
-                    <label id="email-label" for="email">Mail</label>
-                    <input type="email" name="email" id="email">
+                    <label class="labell" id="email-label" for="email">Mail</label>
                 </div>
+                <!-- age girişi -->
                 <div class="input-container">
+                    <input class="input" type="number" name="age" id="number" min="0" max="120"  placeholder=" ">
                     <i class="fa-solid fa-cake-candles"></i>
-                    <label id="number-label" for="number">Age</label>
-                    <input type="number" name="age" id="number">
+                    <label class="labell" id="number-label" for="number">Age</label>
                 </div>
+                <!-- cinsiyet için dropbox eklendi -->
                 <div>
                     <select class="gender" id="gender">
                         <option class="select-gender" value="">Select Gender</option>
@@ -35,10 +43,15 @@
                         <option value="female">Female</option>
                     </select>
                 </div>
-                <div >
-                    <span>How did you here us?</span>
+                <!-- tek seçenek seçilebilecek şekilde radio button eklendi -->
+                <div class="social">
+                    <span >How did you here us?</span>
+                    <label class="social-radio">
                     <input type="radio" name="about" value="instagram">Instagram
+                    </label>
+                    <label class="social-radio">
                     <input type="radio" name="about" value="linkedn">Linkedn
+                    </label>
                 </div>
                 <div class="option">
                     <div>
@@ -51,11 +64,12 @@
                         <label for="option2">Subscribe For New</label>
                     </div>
                  </div>
+                 <!-- kullanıcı yorum için textarea eklendi -->
                 <div>
                     <textarea name="suggestion" id="suggestion" placeholder="suggestions"></textarea>
                 </div>
-                <div>
-                    <button type="submit">Sign Up</button>
+                <div class="button" >
+                    <button  type="submit">Sign Up</button>
                 </div>
                 
             </form>

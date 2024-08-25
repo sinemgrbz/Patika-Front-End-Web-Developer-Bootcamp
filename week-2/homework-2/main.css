@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ana sayfa geçişli bir arkaplan için z index içeren iki arka plan eklendi */
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  url('https://i.blogs.es/2db45d/mosaicoking/1366_2000.jpg') no-repeat center center/cover;
+    filter: blur(2px); 
+    z-index: 1;
+}
+
+.background2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  url('https://webadminportal.ucv.edu.pe/uploads/images/noticias/2024/stephen_king_portada.jpg') no-repeat center center/cover;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+/* info sayfası için arkaplan eklendi */
+.info-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  url('https://seyler.ekstat.com/img/max/800/a/asCcQ7rOHQBGKiGq-637429463206790831.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: 2;
+    opacity: 0.8; 
+    background-attachment: fixed;
+}
+
+/* kitap sayfası için arkaplan eklendi */
+.books-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  url('https://geekyapar.com/wp-content/uploads/2014/09/stephen_king_all.jpg') no-repeat center center/cover;
+    z-index: 2;
+    opacity: 0.6; 
+}
+
+/* elemanların background önüne gelmesi için z-index kullanıldı */
+header, article, footer,section {
+    position: relative;
+    z-index: 3;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial", sans-serif;
+    min-height: 100vh;
+    justify-items: center;
+    text-align: center;
+}
+
+header{
+    justify-content: start;
+    align-items: start;
+}
+
+.nav{
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: s;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    opacity: 1.2;
+}
+
+.nav a{
+    height: 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    align-items: center;
+}
+
+.nav a:hover{
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    transition: all 0.2sn ease;
+}
+
+.books-nav a{
+    color:  #f4f4f4;
+}
+
+.books-nav a:hover{
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.2sn ease;
+}
+
+
+@media (max-width: 767px) {
+    #nav{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+}
+
+
+.author-words{
+    display: flex;
+    height: 500px;
+    align-items: end;
+    margin-left: 20px;
+
+    }
+
+.words{
+    color: #333;
+    font-style: italic;
+    color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #555;
+    
+}
+
+.author{
+    color: #333;
+    display: block;
+    text-align: right;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.bookslist{
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    opacity: 2;
+    position: relative;
+    margin: auto;
+}
+
+
+.book-list{
+    line-height: 30px;
+    margin: 12px;
+    text-align: left;
+    padding: 10px;
+}
+
+.bookslist h2{
+    margin: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+}
+
+.personel-info{
+    width: 400px;
+    height: 600px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    opacity: 10;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    color:#f4f4f4;
+    font-size: 20px;
+}
+
+
+footer{
+    width: 100%;
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    padding: 20px;
+}

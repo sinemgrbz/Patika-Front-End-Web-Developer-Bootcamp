@@ -7,7 +7,6 @@
 body{
     background: url("https://picsum.photos/id/877/1200/700") no-repeat center center/cover;
     color: #f6f4f7;
-    /* background: linear-gradient(to right, #593c70, #f16047); */
 }
 
 .form-area{
@@ -16,9 +15,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    gap: 20px;
+    gap: 10px;
 }
 
+/* form elemanlamanlarına flex uygulandı */
 #survey-form{
     display: flex;
     flex-direction: column;
@@ -30,42 +30,44 @@ body{
     border-radius: 6px;
     background: transparent;
     backdrop-filter: blur(30px);
-    padding: 20px;
+    padding: 30px;
     gap: 30px;
     overflow: hidden;
     color: #f6f4f7;
 
 }
 
-span{
-    display: block;
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
 .option{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
     gap: 30px;
+    font-size: 20px;
 }
 
 
 .input-container{
     position: relative;
+
 }
 
+/*  positon absolute belirlenerek inputta istenilen pozisyona getirildi 
+    ikon tıklama devredışı*/
 .input-container i {
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    pointer-events: none; /* Icon'a tıklamayı devre dışı bırakır */
-}
-
-.input-container label {
-    position: absolute;
-    top: 50%;
-    left: 35px;
-    transform: translateY(-50%);
-    pointer-events: none; /* Icon'a tıklamayı devre dışı bırakır */
+    pointer-events: none; 
 }
 
 .input-container input{
@@ -73,28 +75,85 @@ span{
     border-radius: 4px;
     border: 2px solid #f6f4f7;
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
+    position: relative;
+    outline: none;
+    color: #f6f4f7;
+    font-size: 20px;
 }
 
+/* positon absolute belirlenerek inputta istenilen pozisyona getirildi  */
+.input-container .labell  {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    transition: .5s;
+    z-index: 1;
+    font-size: 20px;
+}
+
+/* input tıklandığında ve dolu ike label hareket ettirildi */
+.input-container .input:focus ~ .labell , 
+.input-container input:not(:placeholder-shown) ~ .labell {
+    top: -2px; 
+    padding: 0 5px;
+    color: #5c5a5a;
+    background:#f6f4f7;
+    backdrop-filter: blur(30px);
+    border-left: 2px solid #f6f4f7;
+    border-right: 2px solid #f6f4f7;
+    z-index: 2;
+}
+
+/* select için background ve border düzenlendi */
 .gender{
     background: transparent;
     border: none;
+    outline: none;
     border-bottom: 2px solid #f6f4f7;
     width: 100%;
     padding: 10px;
     text-align: center;
-    
+    color: #f6f4f7;
+    font-size: 20px;
+}
+
+/* seçeneklere ait background düzenlendi */
+option{
+    background-color: #5c5a5a;
 }
 
 
-input:focus~label,
-input:valid~label {
-    top: -100px;
-    font-size: 12px;
-} 
 
 #suggestion{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background: transparent;
+    color: #f6f4f7;
+}
+
+
+
+.button{
+    display: flex;
+    margin: auto;
+}
+
+.button button{
+    width: 140px;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #5c5a5a;
+    background:transparent;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+/* imlec buton üstüne geldiğinde efekt eklendi */
+.button button:hover{
+    color:#f6f4f7;
+    background-color:  #5c5a5a;
 }

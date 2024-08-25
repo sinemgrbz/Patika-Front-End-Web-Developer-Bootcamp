@@ -1,6 +1,6 @@
-# Optional Form Project
+# Tribute Website
 
-In this project, the aim is to create a simple form using HTML and CSS. 
+In this project, tribute website designed for a writer using HTML and CSS. 
 
 
 
