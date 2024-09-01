@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif;
+}
+
+.jumbotron{
+    background: url("https://picsum.photos/id/37/1600/400") no-repeat center center/cover;
+}
+
+.lead {
+    text-shadow:0 0 5px #333, 
+                0 0 10px #333, 
+                0 0 20px #333, 
+                0 0 40px #333, 
+                0 0 80px #333, 
+                0 0 220px #333;
+}
+
+h1 {
+    color:  #f4f4f4;
+}
+
+
+
+/* cursor üzerine geldiğinde efekt eklendi */
+.baslik:hover{
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+}
+
+/* başlık tıklandığı an için efekt eklendi */
+.baslik:active{
+    padding: 15px 25px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2sn ease;
+}
+
+/* ziyaret edilen link rengi değişmemesi için düzenleme yapıldı */
+.baslik:visited{
+    color: #333;
+}
+
+
+
+
+
+
+
