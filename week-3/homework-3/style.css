@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 242, 238);
+}
+
+::placeholder{
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    background: url("search-solid.svg") no-repeat;
+    background-color: rgb(237, 243, 248);
+    background-position: 35%;
+    background-size: 6%;
+  }
+
+  .nav-link{
+    font-size: 11.25px;
+  }
