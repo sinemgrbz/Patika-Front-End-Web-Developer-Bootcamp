@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Drum Kit</title>
+</head>
+<body class="myb main">
+    <div class="container">
+        <h1 class="header">Play Your Dream Song</h1>
+        <img class="myDrum" src="images/drum.png" height="500" width="700"  alt="#">
+        <div class="btns">
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/boom.wav')">A</button>
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/clap.wav')">S</button>
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/hihat.wav')">D</button>
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/kick.wav')">F</button>
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/openhat.wav')">G</button>
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/ride.wav')">H</button>
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/snare.wav')">J</button>
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/tink.wav')">K</button>
+            <button class="mybtn" id="btn" onclick="playAudio('./audio/tom.wav')">L</button>
+        </div>
+    </div>
+    <script src="script.js" >
+    </script>
+</body>
+</html>
