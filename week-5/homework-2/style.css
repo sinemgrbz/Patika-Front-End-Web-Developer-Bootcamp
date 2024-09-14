@@ -7,9 +7,7 @@
 body{
     min-height: 100vh;
     min-width: 100vw; 
-    overflow: hidden; 
-    
-    
+    overflow: hidden;     
 }
 
 .main{
@@ -78,8 +76,6 @@ body{
 }
 
 @media (max-width: 767px) {
-
-
     .header{
         font-size: 30px;
     }
