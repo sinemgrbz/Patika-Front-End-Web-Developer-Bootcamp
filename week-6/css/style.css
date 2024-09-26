@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+  background: url("https://fastly.picsum.photos/id/4/5000/3333.jpg?hmac=ghf06FdmgiD0-G4c9DdNM8RnBIN7BO0-ZGEw47khHP4") no-repeat center center/cover;
+  opacity: 0.8;
+  background-attachment: fixed;
+  font-family: "Caveat", cursive !important; /*default css ezmek için !important kullandım  */
+  font-weight: 700 !important;
+  font-size: 25px  !important;
+  }
+
+
+/*  bildirim */
+.toast.show {
+  opacity: 1; 
+}
+
+.toast-body{
+  color:  rgb(81, 73, 73);
+  font-size: 25px  !important;
+}
+
+
+/* başlık - input- ekle butonu */
+.header {
+  margin-top:100px;
+  padding-bottom: 30px;
+  color: rgb(81, 73, 73);
+  text-align: center;
+  width: 75%;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  /* font-size: 16px; */
+}
+
+.button {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  /* font-size: 16px; */
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.button:hover {
+  background-color: #bbb;
+}
+
+/*yapılacaklar listesi  */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  margin-left: 0;
+  padding: 0;
+  width: 75%;
+}
+
+ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: auto;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  /* font-size: 18px; */
+  transition: 0.2s;
+  list-style-type: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked .li-text{
+  text-decoration: line-through;
+}
+
+ul li.checked {
+  background:linear-gradient(to right,  #7fdd9d, #034b1f);
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color:#1b1b19;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 15px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* ikonlar */
+.icon-div{
+  display: flex;
+  margin-left: auto;
+}
+
+.icon-div i{
+  margin-left: 30px;
+  /* font-size: 25px; */
+  text-decoration: none;
+}
+
+.taskClose{
+  color: #ba7886;  
+}
+
+.taskClose:hover{
+  color: #b11436;  
+}
+
+.taskChecked{
+  color:  #248c4e;
+}
+
+.taskChecked:hover{
+  color:  #05692d;
+}
+
+
+.reTask{
+  color:#c1c120;
+  text-decoration: none;
+}
+
+.reTask:hover{
+  color:#777709;
+}
+
+
+
+
