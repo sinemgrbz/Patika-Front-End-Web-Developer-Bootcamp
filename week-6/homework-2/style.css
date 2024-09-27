@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Zilla Slab", serif;
+  background: url("images/pexels-cottonbro-3296538.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  text-align: center;
+  color: #f1560e;
+}
+.menu {
+  margin-top: 20px;
+}
+
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.btn-item {
+  margin-left: 15px;
+  background-color: rgb(201, 201, 201);
+  /* opacity: 0.8; */
+  width: 100px; 
+}
+
+.btn-item:hover{
+box-shadow: 0px 0px 12px 4px rgba(143, 136, 136, 0.74);
+transform: scale(1.05);
+}
+
+.photo {
+  width: 50%;
+  height: 175px;
+  object-fit: cover;
+  border: 0.25rem solid rgb(71, 70, 70);
+  border-radius: 10px;
+
+}
+
+.photo:hover{
+  transform: scale(1.05);
+  transition: .5s ease-in;
+}
+
+.menu-items {
+  display: flex;
+  background-color: rgb(201, 201, 201);
+  opacity: 0.8;
+  padding: 10px;
+  width: 600px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+h4 {
+  color: #ca1b12;
+  font-weight: 600;
+}
+
+.menu-text {
+  padding-top: 20px;
+  color: rgb(46, 45, 45);
+}
+
+.price{
+  font-weight: 700;
+}
+
+
+
